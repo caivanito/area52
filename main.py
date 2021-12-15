@@ -19,7 +19,7 @@
 #     return ordenada
 
 def ordenar_extraterrestre(lista, alfabeto):
-    for i in range(1, len(lista)):
+    for i in range(0, len(lista)):
         try:
             actual = alfabeto.index(lista[i][0])
             palabra_actual = lista[i]
