@@ -30,9 +30,11 @@ def ordenar_extraterrestre(lista, alfabeto):
                 indice -= 1
             else:
                 aux_index = 0
-                while indice > 0 and alfabeto.index(lista[indice - 1][aux_index]) == alfabeto.index(palabra_actual[aux_index]):
+                while indice > 0 and alfabeto.index(lista[indice - 1][aux_index]) == alfabeto.index(
+                        palabra_actual[aux_index]):
                     aux_index += 1
-                    if indice > 0 and alfabeto.index(lista[indice - 1][aux_index]) > alfabeto.index(palabra_actual[aux_index]):
+                    if indice > 0 and alfabeto.index(lista[indice - 1][aux_index]) > alfabeto.index(
+                            palabra_actual[aux_index]):
                         lista[indice] = lista[indice - 1]
                         indice -= 1
                         lista[indice] = palabra_actual
@@ -40,15 +42,11 @@ def ordenar_extraterrestre(lista, alfabeto):
             lista[indice] = palabra_actual
         except IndexError:
             if len(lista[indice - 1]) > len(palabra_actual):
-                print(lista[indice - 1])
-                print(palabra_actual)
                 lista[indice] = lista[indice - 1]
-                #indice -= 1
-                lista[indice-1] = palabra_actual
+                lista[indice - 1] = palabra_actual
             else:
                 lista[indice] = palabra_actual
-                #indice -= 1
-                lista[indice -1] = lista[indice - 1]
+                lista[indice - 1] = lista[indice - 1]
         continue
     return lista
 
