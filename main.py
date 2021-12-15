@@ -32,7 +32,6 @@ def ordenar_extraterrestre(lista, alfabeto):
                 aux_index = 0
                 while indice > 0 and alfabeto.index(lista[indice - 1][aux_index]) == alfabeto.index(palabra_actual[aux_index]):
                     aux_index += 1
-                    print(aux_index)
                     if indice > 0 and alfabeto.index(lista[indice - 1][aux_index]) > alfabeto.index(palabra_actual[aux_index]):
                         lista[indice] = lista[indice - 1]
                         indice -= 1
