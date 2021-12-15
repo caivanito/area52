@@ -57,13 +57,8 @@ def ordenar_extraterrestre(lista, alfabeto):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     alfabeto = "zyxwvutsrqponmlkjihgfedcba"
-    lista = ['extraterrestre', 'miel', 'automovil', 'auto', 'revestir', 'al','a','z']
-    lst = ['extraterrestre', 'miel', 'automovil', 'auto', 'revestir', 'al']
-    # lista = ['extraterrestre', 'miel', 'automovil', 'auto', 'revestir', 'al']
+    lista = ['miel', 'extraterrestre', 'al', 'automovil', 'auto', 'revestir']
     lista_ordenada = ordenar_extraterrestre(lista, alfabeto)
-    ordenada = ['revestir', 'miel', 'extraterrestre', 'auto', 'automovil', 'al']
-    print("Desordenada: ", lst)
     print("Ordenada: ", lista_ordenada)
-    print("Ordenada OK: ", ordenada)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
